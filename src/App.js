@@ -1,25 +1,32 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Container, Row, Col, Navbar } from 'react-bootstrap';
+import MetricConversion from './components/MetricConversion/MetricConverison';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <Navbar expand="lg" variant="dark" bg="primary">
+          <Container>
+            <Navbar.Brand>Metric Converter</Navbar.Brand>
+          </Container>
+        </Navbar>
+        <Container>
+          <Row>
+            <Col>
+              <div className="mt-5">
+                <MetricConversion />
+              </div>
+            </Col>
+          </Row>
+          <footer className="mt-5">
+            <hr />
+            <p className="text-center text-muted p-3">
+              Keith Didier &copy; 2019
+            </p>
+          </footer>
+        </Container>
       </div>
     );
   }
