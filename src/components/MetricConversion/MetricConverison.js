@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { TabContainer, Tabs, Tab, Row, Col, Nav } from 'react-bootstrap';
 import WeightConverter from './Converters/ConvertWeight/WeightConverter';
-import ConvertTemperature from './Converters/ConvertTemperature';
+import ConvertTemperature from './Converters/ConvertTemperature/ConvertTemperature';
 import ConvertLength from './Converters/ConvertLength';
 import ConvertSpeed from './Converters/ConvertSpeed';
 
